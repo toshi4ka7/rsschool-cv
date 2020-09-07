@@ -1,2 +1,1 @@
-# rsschool-cv
-Education RSS
+[https://toshi4ka7.github.io/rsschool-cv/cv](https://toshi4ka7.github.io/rsschool-cv/cv)
