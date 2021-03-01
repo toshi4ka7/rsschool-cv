@@ -4,64 +4,56 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Resume</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/d04adfcdd0.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-	<main class="resume">
-
-		<div class="about">
-			<img src="photo.jpg" alt="My photo">
-			<p class="name"><strong>Anton Dovgun</strong></p>
-			<p class="city">Brest, 27 year</p>
+	<header class="header">
+		<div class="header__left">
+			<img class="header__img" src="./photo.jpg" alt="This photo is not supported in this browser">
 		</div>
+		<div class="header__right">
+			<h1 class="header__title">Anton Dovgun</h1>
+			<p class="header__desc">Brest, 27 year</p>
+		</div>
+	</header>
 
-		<section class="info">
+	<div class="conteiner">
+		<aside class="sidebar">
+			<section class="contact">
+				<h2 class="contact__title">Contact</h2>
+				<ul class="list">
+					<li class="list__item"><i class="fas fa-envelope"></i> toshi4ka7@mail.ru</li>
+					<li class="list__item"><i class="fas fa-phone"></i> +37529-800-51-77</li>
+					<li class="list__item"><i class="fab fa-github"></i> toshi4ka7</li>
+					<li class="list__item"><i class="fab fa-discord"></i>Anton Dovgun#5422</li>
+				</ul>
+			</section>
+			<section class="about">
+				<h2 class="about__title">About</h2>
+				<p class="about__text">Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu. Sit munere facilis accusam eu dicat falli consulatu at vis. Te facilisis</p>
+			</section>
+			<section class="lang">
+				<h2 class="lang__title">English A2+</h2>
+				<p class="lang__text">According to the passed test on the website EXAMINATOR</p>
+			</section>
+		</aside>
 
-			<div class="item">
-				<h3>#Contact Info</h3>
-				<p><b>Nik:</b> toshi4ka7</p>
-				<p><b>Email:</b> toshi4ka7@mail.ru</p>
-				<p><b>GitHub:</b> https://github.com/toshi4ka7</p>
-				<p><b>Phone:</b> +375-29-800-51-77</p>
-			</div>
+		<main class="main">
+			<p>This is main</p>
+		</main>
+	</div>
+	
 
-			<div class="item">
-				<h3>#Summary</h3>
-				<p>I love programming - because it's cool. Writing code that does something that feels great. I can write code for hours and not notice how time flies. Programming allows you to develop your brain and not degrade over time.</p>
-				<p>I tried myself in Front-end and Bask-end development, and for me Bask-end development is more suitable. Because all the logic of the site or application is done there.</p>
-				<p>Therefore, after this course, I want to focus on the northern part of programming using <b>Node.js</b></p>
-			</div>
-
-			<div class="item">
-				<h3>#Skills</h3>
-				<p><b>Programming languages:</b> HTML, CSS, JavaScript, PHP, SQL.</p>
-				<p><b>Frameworks:</b> Bootstrap, Less preprocessor, jQuery.</p>
-				<p><b>Version control:</b> Git, GitHub.</p>
-				<p><b>Other:</b> Gulp</p>
-			</div>
-
-			<div class="item">
-				<h3>#Experience</h3>
-				<p>My last job is website development <a href="http://kera.by/">http://kera.by/</a></p>
-				<p>Front-end and Bask-end parts of the site I wrote from scratch without using frameworks.</p>
-				<p>My goal was to find out how all this is created, how it all works.</p>
-			</div>
-
-			<div class="item">
-				<h3>#Education</h3>
-				<p>Self-education. I've read books, articles, free seminars, and practiced a lot of coding practice.</p>
-			</div>
-
-			<div class="item">
-				<h3>#English</h3>
-				<p>My English is between beginner and intermediate. Many things in English I understand.</p>
-				<p>I passed the test on the EXAMINATOR website and got an A2+ mark (53% correct answers)</p>
-			</div>
-			
-		</section>
-
-	</main>
+	<footer class="footer">
+		<a class="footer__logo" href="https://rs.school/" target="_blank">
+			<img  class="hidden" src="./rs_school-hover.svg" alt="This svg is not supported in this browser">
+		</a>
+		<p class="footer__date">2021Q1</p>
+		<a href="https://github.com/toshi4ka7/" target="_blank"><i class="fab fa-github footer__github"></i></a>
+	</footer>
 
 </body>
 </html>
