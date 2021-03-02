@@ -1,0 +1,252 @@
+$width-bar: 35%;
+$width-main: 65%;
+$color-main: tomato;
+$dark: #444;
+$dark-light: #777;
+$light: #fff;
+$light-dark: #ddd;
+$font-dark: #303641;
+$font-ligth: rgb(240, 238, 238);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  width: 1000px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  color: $dark;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 400;
+  border-bottom: 2px solid $color-main;
+  .sidebar & {
+    color: $light;
+  }
+}
+h3 {
+  font-size: 2.2rem;
+  color: $dark-light;
+  margin-bottom: 30px;
+}
+p {
+  line-height: 2.4rem;
+}
+section {
+  margin-bottom: 50px;
+}
+.conteiner {
+  display: flex;
+}
+.hidden {
+  display: none;
+}
+.fa-map-marker-alt {
+  margin-right: 5px;
+  font-size: 2.1rem;
+}
+
+.header {
+  display: flex;
+}
+
+.header__left {
+  width: $width-bar;
+  background-color: $font-dark;
+}
+.header__img {
+  width: 250px;
+  border-radius: 50%;
+  border: 5px solid $color-main;
+  display: block;
+  margin: 50px auto;
+}
+.header__right {
+  width: $width-main;
+  text-align: center;
+  background-color: $font-ligth;
+  padding-top: 100px;
+}
+.header__title {
+  font-size: 6rem;
+  margin-bottom: 17px;
+}
+.header__desc {
+  font-size: 2.5rem;
+  color: $dark-light;
+}
+
+.sidebar {
+  width: $width-bar;
+  background-color: $font-dark;
+  color: $light-dark;
+  padding: 30px;
+}
+
+.list {
+  list-style: none;
+  &__item {
+    margin-bottom: 15px;
+  }
+  .fas,
+  .fab {
+    margin-right: 15px;
+    font-size: 2rem;
+  }
+}
+
+.main {
+  width: $width-main;
+  background-color: $font-ligth;
+  padding: 30px;
+  padding-bottom: 0;
+  color: $dark;
+}
+
+.education__item {
+  display: flex;
+  margin-bottom: 15px;
+}
+.education__item-title {
+  width: 120px;
+}
+.skills__item {
+  margin-bottom: 50px;
+}
+.skills__item-title {
+  text-align: center;
+}
+.skill {
+  display: flex;
+}
+.skill__name {
+  width: 90px;
+  text-align: right;
+  display: inline-block;
+  margin-right: 15px;
+}
+.skill__procent {
+  flex-grow: 1;
+  background-color: $light-dark;
+  height: 22px;
+  display: inline-block;
+  border: 1px solid $dark-light;
+  border-radius: 11px;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    background-color: #ff63479c;
+    border-radius: 10px;
+  }
+  &--0:before {
+    width: 0;
+  }
+  &--10:before {
+    width: 10%;
+  }
+  &--20:before {
+    width: 20%;
+  }
+  &--30:before {
+    width: 30%;
+  }
+  &--40:before {
+    width: 40%;
+  }
+  &--50:before {
+    width: 50%;
+  }
+  &--60:before {
+    width: 60%;
+  }
+  &--70:before {
+    width: 70%;
+  }
+  &--80:before {
+    width: 80%;
+  }
+  &--90:before {
+    width: 90%;
+  }
+  &--100:before {
+    width: 100%;
+  }
+}
+
+.tools {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.tools__item {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: $light-dark;
+  border: 1px solid $dark-light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px 15px;
+}
+
+.project {
+  margin: 30px 0;
+}
+.project__link {
+  text-decoration: none;
+  transition: color 0.2s;
+  margin-bottom: 5px;
+  display: inline-block;
+  color: blue;
+  &:hover {
+    color: $color-main;
+  }
+}
+
+.footer {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $font-dark;
+  color: $light-dark;
+}
+.footer__logo {
+  height: 70px;
+  width: 195px;
+  background-image: url("./rs_school.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: contain;
+  transition: all 0.3s;
+}
+
+.footer__date {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.footer__github {
+  font-size: 4rem;
+  color: $light-dark;
+  transition: all 0.3s;
+  &:hover {
+    color: $color-main;
+  }
+}
