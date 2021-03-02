@@ -1,22 +1,24 @@
 <!doctype html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Resume</title>
+	<title>CV Anton Dovgun</title>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="./styles/style.css">
 	<script src="https://kit.fontawesome.com/d04adfcdd0.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
 	<header class="header">
 		<div class="header__left">
-			<img class="header__img" src="./photo.jpg" alt="This photo is not supported in this browser">
+			<img class="header__img" src="./assets/photo.jpg" alt="This photo is not supported in this browser">
 		</div>
 		<div class="header__right">
 			<h1 class="header__title">Anton Dovgun</h1>
-			<p class="header__desc">Brest, 27 year</p>
+			<p class="header__desc"><i class="fas fa-map-marker-alt"></i>Brest, 27 year</p>
 		</div>
 	</header>
 
@@ -32,8 +34,12 @@
 				</ul>
 			</section>
 			<section class="about">
-				<h2 class="about__title">About</h2>
-				<p class="about__text">Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu. Sit munere facilis accusam eu dicat falli consulatu at vis. Te facilisis</p>
+				<h2 class="about__title">About me</h2>
+				<p class="about__text">
+					I love creating websites and web applications. I am interested in the process of creating an application from
+					start to finish, so I do not stop at the front-end development, but I also try to learn the back-end. Creating
+					the core of the application (its logic) is very cool.
+				</p>
 			</section>
 			<section class="lang">
 				<h2 class="lang__title">English A2+</h2>
@@ -42,18 +48,160 @@
 		</aside>
 
 		<main class="main">
-			<p>This is main</p>
+			<section class="education">
+				<h2 class="education__title">Education</h2>
+				<div class="education__item">
+					<h3 class="education__item-title">Books</h3>
+					<ul class="list">
+						<li class="list__item">Devid Flenagan - JavaScript. Detailed manual</li>
+						<li class="list__item">David McFarland - New Big Book CSS</li>
+						<li class="list__item">Kevin Yank - PHP and MySQL</li>
+						<li class="list__item">learn.javascript.ru</li>
+					</ul>
+				</div>
+				<div class="education__item">
+					<h3 class="education__item-title">Courses</h3>
+					<ul class="list">
+						<li class="list__item">PHP and MySQL from Zero to Guru 2.0 (webformyself)</li>
+						<li class="list__item">ReactJS from Zero to Pro. (webformyself)</li>
+						<li class="list__item">NodeJS. The complete guide (webformyself)</li>
+						<li class="list__item">JS / FRONT-END 2020Q3 (RolingScopeSchool)</li>
+						<li class="list__item">JS / FRONT-END 2021Q1 (RolingScopeSchool)</li>
+					</ul>
+				</div>
+			</section>
+			<section class="skills">
+				<h2 class="skills__title">Skills</h2>
+				<div class="skills__item">
+					<h3 class="skills__item-title">Languages</h3>
+					<ul class="list">
+						<li class="list__item skill">
+							<span class="skill__name">HTML5</span>
+							<div class="skill__procent skill__procent--90"></div>
+						</li>
+						<li class="list__item skill">
+							<span class="skill__name">CSS3</span>
+							<div class="skill__procent skill__procent--90"></div>
+						</li>
+						<li class="list__item skill">
+							<span class="skill__name">JavaScript</span>
+							<div class="skill__procent skill__procent--80"></div>
+						</li>
+						<li class="list__item skill">
+							<span class="skill__name">PHP</span>
+							<div class="skill__procent skill__procent--60"></div>
+						</li>
+						<li class="list__item skill">
+							<span class="skill__name">SQL</span>
+							<div class="skill__procent skill__procent--70"></div>
+						</li>
+						<li class="list__item skill">
+							<span class="skill__name">RegExp</span>
+							<div class="skill__procent skill__procent--70"></div>
+						</li>
+						<li class="list__item skill">
+							<span class="skill__name">NodeJS</span>
+							<div class="skill__procent skill__procent--30"></div>
+						</li>
+					</ul>
+				</div>
+				<div class="skills__item">
+					<h3 class="skills__item-title">Framework & Database</h3>
+					<ul class="list">
+						<li class="list__item skill">
+							<span class="skill__name">Bootstrap</span>
+							<div class="skill__procent skill__procent--70"></div>
+						</li>
+						<li class="list__item skill">
+							<span class="skill__name">jQuery</span>
+							<div class="skill__procent skill__procent--70"></div>
+						</li>
+						<li class="list__item skill">
+							<span class="skill__name">VuiJS</span>
+							<div class="skill__procent skill__procent--30"></div>
+						</li>
+						<li class="list__item skill">
+							<span class="skill__name">Reack</span>
+							<div class="skill__procent skill__procent--30"></div>
+						</li>
+						<li class="list__item skill">
+							<span class="skill__name">Express</span>
+							<div class="skill__procent skill__procent--40"></div>
+						</li>
+						<li class="list__item skill">
+							<span class="skill__name">MySQL</span>
+							<div class="skill__procent skill__procent--70"></div>
+						</li>
+						<li class="list__item skill">
+							<span class="skill__name">MongoDB</span>
+							<div class="skill__procent skill__procent--40"></div>
+						</li>
+					</ul>
+				</div>
+				<div class="skills__item">
+					<h3 class="skills__item-title">Tools & methodology</h3>
+					<ul class="tools">
+						<li class="tools__item">BEM</li>
+						<li class="tools__item">SASS</li>
+						<li class="tools__item">Webpack</li>
+						<li class="tools__item">Gulp</li>
+						<li class="tools__item">Parcel</li>
+						<li class="tools__item">Git</li>
+						<li class="tools__item">OOP</li>
+					</ul>
+				</div>
+			</section>
+			<section class="projects">
+				<h2 class="projects__title">Projects</h2>
+				<ul class="list">
+					<li class="list__item project">
+						<a class="project__link" target="_blank"
+							href="https://toshi4ka7.github.io/my-first-project-buy-product/">https://toshi4ka7.github.io/my-first-project-buy-product</a>
+						<p class="project__desc">My first app that started it all. This app helps you buy products in the store.</p>
+					</li>
+					<li class="list__item project">
+						<a class="project__link" target="_blank" href="http://kera.by/">http://kera.by/</a>
+						<p class="project__desc">My first commercial project. This site is written by PHP and database MySQL.</p>
+					</li>
+					<li class="list__item project">
+						<a class="project__link" target="_blank"
+							href="https://rolling-scopes-school.github.io/toshi4ka7-JS2020Q3/shelter/pages/main/index.html">https://rolling-scopes-school.github.io/toshi4ka7-JS2020Q3/shelter/pages/main/index.html</a>
+						<p class="project__desc">Shelter task from RolingScopeSchool 2020Q3</p>
+					</li>
+					<li class="list__item project">
+						<a class="project__link" target="_blank"
+							href="https://rolling-scopes-school.github.io/toshi4ka7-JS2020Q3/calculator/">https://rolling-scopes-school.github.io/toshi4ka7-JS2020Q3/calculator/</a>
+						<p class="project__desc">Calculator task from RolingScopeSchool 2020Q3</p>
+					</li>
+					<li class="list__item project">
+						<a class="project__link" target="_blank"
+							href="https://rolling-scopes-school.github.io/toshi4ka7-JS2020Q3/momentum/">https://rolling-scopes-school.github.io/toshi4ka7-JS2020Q3/momentum/</a>
+						<p class="project__desc">Momentum task from RolingScopeSchool 2020Q3</p>
+					</li>
+					<li class="list__item project">
+						<a class="project__link" target="_blank"
+							href="https://rolling-scopes-school.github.io/toshi4ka7-JS2020Q3/virtual-keyboard/">https://rolling-scopes-school.github.io/toshi4ka7-JS2020Q3/virtual-keyboard/</a>
+						<p class="project__desc">Virtual-keyboard task from RolingScopeSchool 2020Q3</p>
+					</li>
+					<li class="list__item project">
+						<a class="project__link" target="_blank"
+							href="https://rolling-scopes-school.github.io/toshi4ka7-JS2020Q3/gem-puzzle/">https://rolling-scopes-school.github.io/toshi4ka7-JS2020Q3/gem-puzzle/</a>
+						<p class="project__desc">Gem-puzzle task from RolingScopeSchool 2020Q3</p>
+					</li>
+				</ul>
+			</section>
 		</main>
 	</div>
-	
+
 
 	<footer class="footer">
 		<a class="footer__logo" href="https://rs.school/" target="_blank">
-			<img  class="hidden" src="./rs_school-hover.svg" alt="This svg is not supported in this browser">
+			<img src="./assets/rs_school.svg" alt="This svg is not supported in this browser">
 		</a>
 		<p class="footer__date">2021Q1</p>
 		<a href="https://github.com/toshi4ka7/" target="_blank"><i class="fab fa-github footer__github"></i></a>
 	</footer>
 
 </body>
+
 </html>
